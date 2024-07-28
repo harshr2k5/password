@@ -12,11 +12,7 @@ def check_password_strength(password):
     # At least one special character
     special_char_regex = re.compile(r'[@$!%*?&]')
 
-    if (length_regex.search(password) and
-        uppercase_regex.search(password) and
-        lowercase_regex.search(password) and
-        digit_regex.search(password) and
-        special_char_regex.search(password)):
+    if (length_regex.search(password) and uppercase_regex.search(password) and lowercase_regex.search(password) and digit_regex.search(password) and special_char_regex.search(password)):
         return True
     else:
         return False
