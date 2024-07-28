@@ -21,7 +21,6 @@ def check_password_strength(password):
     else:
         return False
 
-# Test the function
 def get_input():
     password = input("Set Your Password: ")
     if check_password_strength(password):
